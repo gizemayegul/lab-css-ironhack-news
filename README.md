@@ -178,7 +178,7 @@ Use the following full page screenshot as the guide:
 In this bonus iteration, your task is to **hide the "Navbar" links on small mobile screens** :iphone: and instead display the *"menu"* icon. 
 
 To do this, you will need to add a new element to the `index.html` to display the menu icon and add the necessary styles to the `style.css` file.
-You can find the menu icon in the `images/` folder.
+You can find the menu icon in the `images` folder.
 
 The final result should look like in the below image.
 
@@ -186,10 +186,9 @@ The final result should look like in the below image.
 
 <p align="center">
   <img src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/labs/lab-css-ironhack-news/05-bonus-iteration-3.png" width="300px" alt="bonus iteration 3 preview" />
-</p>
-<br>
-<p align="center">
-  <i>Credits - Menu icon by ariefstudio <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">(Flaticon)</a></i>
+  <br>
+
+  <a href="https://www.flaticon.com/free-icons/menu" title="menu icons"><i>Credits - Menu icon by ariefstudio (Flaticon)</i></a>
 </p>
 
 
@@ -220,61 +219,6 @@ The final result should look like in the below image.
   [Back to top](#faqs)
 </details>
 
-<details>
-  <summary>How do I define a media query in CSS?</summary>
-  <br>
-
-  Media queries in CSS use the following syntax: **`@media`** followed by the media type (like `screen`), and a condition. This condition can check things like the size of the screen (width and height) or its orientation (portrait or landscape). When the condition is true, the styles inside the media query are applied.
-
-  <br>
-
-**Syntax**
-
-```css
-@media <media-type> (<condition>) {
-  /* CSS rules */
-}
-```
-
-  *Note: In the above example, `<media-type>`, and `<condition>` are placeholders. Replace them with your specific values.*
-
-  <br>
-
-  Here's an example of defining a couple of media queries in CSS:
-
-**CSS**
-
-```css
-
-/* Apply this style when the screen width is 600px or less */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
-
-/* Apply this style when the screen width is between 600px and 1200px */
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-  body {
-    background-color: lightgreen;
-  }
-}
-```
-
-In the above example, the body background color changes depending on the screen width.
-The first media query applies when the screen width is 600px or less, and the second applies whenn the width is between 600px and 1200px.
-
-Beyond width, media queries can be used to apply styles based on other features like screen *height* and *orientation* (portrait or landscape), enabling more dynamic and adaptive designs.
-
-For more information on media queries and the syntax, check: [MDN: Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
-
-  <br>
-
-  [Back to top](#faqs)
-
-  <br>
-
-</details>
 
 
 <details>
